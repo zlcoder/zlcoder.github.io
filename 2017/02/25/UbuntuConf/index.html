@@ -22,7 +22,7 @@
 <meta property="og:image" content="/images/memory.png">
 <meta property="og:image" content="/images/cache1.png">
 <meta property="og:image" content="/images/cache2.png">
-<meta property="og:updated_time" content="2017-02-25T09:28:04.111Z">
+<meta property="og:updated_time" content="2017-02-25T09:28:40.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu基本参数">
 <meta name="twitter:description" content="我们在进行一些实验仿真的时候，有时候需要知道一些系统的基本参数，比如内存容量、CPU型号等。有了这些参数才能更好的进行实验。
@@ -272,7 +272,7 @@
 <h3 id="查看物理CPU个数"><a href="#查看物理CPU个数" class="headerlink" title="查看物理CPU个数"></a>查看物理CPU个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"physical id"</span>| sort| uniq| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
 <h3 id="查看每个物理CPU中core的个数-即核数"><a href="#查看每个物理CPU中core的个数-即核数" class="headerlink" title="查看每个物理CPU中core的个数(即核数)"></a>查看每个物理CPU中core的个数(即核数)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"cpu cores"</span>| uniq</div></pre></td></tr></table></figure>
 <h3 id="查看逻辑CPU的个数"><a href="#查看逻辑CPU的个数" class="headerlink" title="查看逻辑CPU的个数"></a>查看逻辑CPU的个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"processor"</span>| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
-<h3 id="查看逻辑CPU的个数-1"><a href="#查看逻辑CPU的个数-1" class="headerlink" title="查看逻辑CPU的个数"></a>查看逻辑CPU的个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"processor"</span>| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
+<h3 id="查看CPU信息（型号）"><a href="#查看CPU信息（型号）" class="headerlink" title="查看CPU信息（型号）"></a>查看CPU信息（型号）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo | grep name | cut <span class="_">-f</span>2 <span class="_">-d</span>: | uniq -c</div></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -282,7 +282,7 @@
 
 </div>
 
-    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl1n89b0000u8umjoio2nna" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl1nznp0002r4umez7a4qic" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

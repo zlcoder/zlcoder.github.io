@@ -253,7 +253,7 @@
 <h3 id="查看物理CPU个数"><a href="#查看物理CPU个数" class="headerlink" title="查看物理CPU个数"></a>查看物理CPU个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"physical id"</span>| sort| uniq| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
 <h3 id="查看每个物理CPU中core的个数-即核数"><a href="#查看每个物理CPU中core的个数-即核数" class="headerlink" title="查看每个物理CPU中core的个数(即核数)"></a>查看每个物理CPU中core的个数(即核数)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"cpu cores"</span>| uniq</div></pre></td></tr></table></figure>
 <h3 id="查看逻辑CPU的个数"><a href="#查看逻辑CPU的个数" class="headerlink" title="查看逻辑CPU的个数"></a>查看逻辑CPU的个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"processor"</span>| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
-<h3 id="查看逻辑CPU的个数-1"><a href="#查看逻辑CPU的个数-1" class="headerlink" title="查看逻辑CPU的个数"></a>查看逻辑CPU的个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"processor"</span>| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
+<h3 id="查看CPU信息（型号）"><a href="#查看CPU信息（型号）" class="headerlink" title="查看CPU信息（型号）"></a>查看CPU信息（型号）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo | grep name | cut <span class="_">-f</span>2 <span class="_">-d</span>: | uniq -c</div></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -263,7 +263,7 @@
 
 </div>
 
-    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl1n89b0000u8umjoio2nna" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl1nznp0002r4umez7a4qic" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -398,7 +398,7 @@
 
 </div>
 
-    <a data-url="/2017/02/25/hello-world/" data-id="cizl1n89g0002u8umkcguy12g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="/2017/02/25/hello-world/" data-id="cizl1nznk0000r4umg9npis3n" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
