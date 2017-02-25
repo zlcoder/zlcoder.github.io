@@ -19,10 +19,10 @@
 之后就会得到系统内存的基本信息
 缓存容量方式11$ lscpu
 这样得到的CPU中每一个核的L1，L2，L3cache容量。其中L1d为一级数据缓存L1i为一级指令缓存，两者合为L1cache，这一级cache为CPU中每一个核私有">
-<meta property="og:image" content="/css/images/memory.png">
-<meta property="og:image" content="/css/images/cache1.png">
-<meta property="og:image" content="/css/images/cache2.png">
-<meta property="og:updated_time" content="2017-02-25T08:28:40.280Z">
+<meta property="og:image" content="/images/memory.png">
+<meta property="og:image" content="/images/cache1.png">
+<meta property="og:image" content="/images/cache2.png">
+<meta property="og:updated_time" content="2017-02-25T09:04:21.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu基本参数">
 <meta name="twitter:description" content="我们在进行一些实验仿真的时候，有时候需要知道一些系统的基本参数，比如内存容量、CPU型号等。有了这些参数才能更好的进行实验。
@@ -30,7 +30,7 @@
 之后就会得到系统内存的基本信息
 缓存容量方式11$ lscpu
 这样得到的CPU中每一个核的L1，L2，L3cache容量。其中L1d为一级数据缓存L1i为一级指令缓存，两者合为L1cache，这一级cache为CPU中每一个核私有">
-<meta name="twitter:image" content="/css/images/memory.png">
+<meta name="twitter:image" content="/images/memory.png">
     
 
     
@@ -261,11 +261,11 @@
             
             <p>我们在进行一些实验仿真的时候，有时候需要知道一些系统的基本参数，比如内存容量、CPU型号等。有了这些参数才能更好的进行实验。</p>
 <h2 id="查看存储容量"><a href="#查看存储容量" class="headerlink" title="查看存储容量"></a>查看存储容量</h2><h3 id="系统内存"><a href="#系统内存" class="headerlink" title="系统内存"></a>系统内存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ free -m</div></pre></td></tr></table></figure>
-<p>之后就会得到系统内存的基本信息<br><img src="css/images/memory.png" alt="Fig 1:内存情况"></p>
+<p>之后就会得到系统内存的基本信息<br><img src="images/memory.png" alt="Fig 1:内存情况"></p>
 <h3 id="缓存容量"><a href="#缓存容量" class="headerlink" title="缓存容量"></a>缓存容量</h3><h4 id="方式1"><a href="#方式1" class="headerlink" title="方式1"></a>方式1</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ lscpu</div></pre></td></tr></table></figure>
-<p>这样得到的CPU中每一个核的L1，L2，L3cache容量。其中L1d为一级数据缓存L1i为一级指令缓存，两者合为L1cache，这一级cache为CPU中每一个核私有的。<br><img src="css/images/cache1.png" alt="Fig 2: cache容量"></p>
+<p>这样得到的CPU中每一个核的L1，L2，L3cache容量。其中L1d为一级数据缓存L1i为一级指令缓存，两者合为L1cache，这一级cache为CPU中每一个核私有的。<br><img src="images/cache1.png" alt="Fig 2: cache容量"></p>
 <h4 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo dmidecode -t cache</div></pre></td></tr></table></figure>
-<p>这种情况下得到的是CPU中总的cache情况，也就是cache/核 * 核的个数。<br><img src="css/images/cache2.png" alt="Fig 3: cache 总容量"></p>
+<p>这种情况下得到的是CPU中总的cache情况，也就是cache/核 * 核的个数。<br><img src="images/cache2.png" alt="Fig 3: cache 总容量"></p>
 <h2 id="CPU基本情况"><a href="#CPU基本情况" class="headerlink" title="CPU基本情况"></a>CPU基本情况</h2>
         
         </div>
@@ -276,7 +276,7 @@
 
 </div>
 
-    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizkzu7pe0001vwumi04tvs7s" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl0ssc60000msumba5a2jou" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
