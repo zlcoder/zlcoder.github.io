@@ -247,7 +247,13 @@
 <p>这样得到的CPU中每一个核的L1，L2，L3cache容量。其中L1d为一级数据缓存L1i为一级指令缓存，两者合为L1cache，这一级cache为CPU中每一个核私有的。<br><img src="/images/cache1.png" alt="Fig 2: cache容量"></p>
 <h4 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo dmidecode -t cache</div></pre></td></tr></table></figure>
 <p>这种情况下得到的是CPU中总的cache情况，也就是cache/核 * 核的个数。<br><img src="/images/cache2.png" alt="Fig 3: cache 总容量"></p>
-<h2 id="CPU基本情况"><a href="#CPU基本情况" class="headerlink" title="CPU基本情况"></a>CPU基本情况</h2>
+<h2 id="CPU基本情况"><a href="#CPU基本情况" class="headerlink" title="CPU基本情况"></a>CPU基本情况</h2><p>关于CPU的核：</p>
+<p>#总核数 = 物理CPU个数 X 每颗CPU的核数；</p>
+<p>#总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数（传统CPU都是2）</p>
+<h3 id="查看物理CPU个数"><a href="#查看物理CPU个数" class="headerlink" title="查看物理CPU个数"></a>查看物理CPU个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/cpuinfo| grep <span class="string">"physical id"</span>| sort| uniq| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
+<h3 id="查看每个物理CPU中core的个数-即核数"><a href="#查看每个物理CPU中core的个数-即核数" class="headerlink" title="查看每个物理CPU中core的个数(即核数)"></a>查看每个物理CPU中core的个数(即核数)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /proc/cpuinfo| grep <span class="string">"cpu cores"</span>| uniq</div></pre></td></tr></table></figure>
+<h3 id="查看逻辑CPU的个数"><a href="#查看逻辑CPU的个数" class="headerlink" title="查看逻辑CPU的个数"></a>查看逻辑CPU的个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /proc/cpuinfo| grep <span class="string">"processor"</span>| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
+<h3 id="查看逻辑CPU的个数-1"><a href="#查看逻辑CPU的个数-1" class="headerlink" title="查看逻辑CPU的个数"></a>查看逻辑CPU的个数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /proc/cpuinfo| grep <span class="string">"processor"</span>| wc <span class="_">-l</span></div></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -257,7 +263,7 @@
 
 </div>
 
-    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl0yf740000rgumm22c5yxx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="/2017/02/25/UbuntuConf/" data-id="cizl1mncv0000i4ume28gq2i6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -392,7 +398,7 @@
 
 </div>
 
-    <a data-url="/2017/02/25/hello-world/" data-id="cizl0yf790002rgumj0x8r9wd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="/2017/02/25/hello-world/" data-id="cizl1mnd10002i4um9agir0je" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
